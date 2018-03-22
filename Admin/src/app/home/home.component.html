@@ -1,0 +1,61 @@
+<section class="content">
+    <div class="row">
+        <div class="col-lg-4 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    <h3>{{TotalUser}}</h3>
+
+                    <p>Total User</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <a [routerLink]="['/user']" class="small-box-footer"> View User List
+                    <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-4 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3>{{PendingPurchase}}</h3>
+
+                    <p>Total Pending Purchase</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-shopping-cart"></i>
+                </div>
+                <a [routerLink]="['/purchase']" class="small-box-footer"> View Pending Purchase 
+                    <i class="fa fa-arrow-circle-right"></i>
+                </a>
+               
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-4 col-xs-6 ">
+            <!-- small box -->
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3>{{CompletePurchase}}</h3>
+
+                    <p>Total Complete Purchase</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-check-circle"></i>
+                </div>
+               
+                <a [routerLink]="['/completepurchase']" class="small-box-footer"> View Complete Purchase 
+                    <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+        <!-- ./col -->
+       
+    </div>
+   
+
+
+</section>

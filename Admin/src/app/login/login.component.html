@@ -1,0 +1,29 @@
+<div class="login-box">
+  <div class="login-logo">
+    <a href="../../index2.html">
+      <b>Hash</b>Byte</a>
+  </div>
+  <div class="login-box-body">
+    <p class="login-box-msg">Sign in to start your session</p>
+    <form novalidate [formGroup]="LoginForm" (ngSubmit)="Login(LoginForm.value,LoginForm.valid)">
+      <div class="form-group has-feedback" [ngClass]="{'has-error':IsLoginSubmitted && !(LoginForm.controls.Username.valid), 'has-success': IsLoginSubmitted && (LoginForm.controls.Username.valid)}">
+        <input type="text" class="form-control" formControlName="Username" placeholder="Username">
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        <span class="help-block" *ngIf="IsLoginSubmitted && !(LoginForm.controls.Username.valid)"> Username is required. </span>
+      </div>
+      <div class="form-group has-feedback" [ngClass]="{'has-error':IsLoginSubmitted && !(LoginForm.controls.Password.valid), 'has-success': IsLoginSubmitted && (LoginForm.controls.Password.valid)}">
+        <input type="password" class="form-control" formControlName="Password" placeholder="Password">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        <span class="help-block" *ngIf="IsLoginSubmitted && !(LoginForm.controls.Password.valid)"> Password is required. </span>
+      </div>
+      <div class="row">
+        <div class="col-xs-8">
+        </div>
+        <div class="col-xs-4">
+          <button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
+        </div>
+      </div>
+    </form>
+    <a href="#">I forgot my password</a>
+  </div>
+</div>

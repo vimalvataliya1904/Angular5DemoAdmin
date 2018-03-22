@@ -1,0 +1,11 @@
+G:\vimal\AngularAdminDemo\AdminAPI\AdminAPI\bin\Debug\netcoreapp2.0\AdminAPI.deps.json
+G:\vimal\AngularAdminDemo\AdminAPI\AdminAPI\bin\Debug\netcoreapp2.0\AdminAPI.runtimeconfig.json
+G:\vimal\AngularAdminDemo\AdminAPI\AdminAPI\bin\Debug\netcoreapp2.0\AdminAPI.runtimeconfig.dev.json
+G:\vimal\AngularAdminDemo\AdminAPI\AdminAPI\bin\Debug\netcoreapp2.0\AdminAPI.dll
+G:\vimal\AngularAdminDemo\AdminAPI\AdminAPI\obj\Debug\netcoreapp2.0\AdminAPI.csprojResolveAssemblyReference.cache
+G:\vimal\AngularAdminDemo\AdminAPI\AdminAPI\obj\Debug\netcoreapp2.0\AdminAPI.csproj.CoreCompileInputs.cache
+G:\vimal\AngularAdminDemo\AdminAPI\AdminAPI\obj\Debug\netcoreapp2.0\AdminAPI.AssemblyInfoInputs.cache
+G:\vimal\AngularAdminDemo\AdminAPI\AdminAPI\obj\Debug\netcoreapp2.0\AdminAPI.AssemblyInfo.cs
+G:\vimal\AngularAdminDemo\AdminAPI\AdminAPI\bin\Debug\netcoreapp2.0\AdminAPI.pdb
+G:\vimal\AngularAdminDemo\AdminAPI\AdminAPI\obj\Debug\netcoreapp2.0\AdminAPI.dll
+G:\vimal\AngularAdminDemo\AdminAPI\AdminAPI\obj\Debug\netcoreapp2.0\AdminAPI.pdb

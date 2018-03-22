@@ -1,0 +1,66 @@
+<section class="content-header">
+    <h1> Currency </h1>
+    <ol class="breadcrumb">
+      <li>
+        <a [routerLink]="['/dashboard']">
+          <i class="fa fa-dashboard"></i> Dashboard</a>
+      </li>
+      <li class="active">Currency</li>
+    </ol>
+  </section>
+  <section class="content">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="box">
+          <div class="box-header">
+            <h3 class="box-title">All Currency</h3>
+            <div class="pull-right">
+              <div class="actions">
+                <button type="submit" class="btn btn-primary" (click)="openPopup()">
+                  <i class="fa fa-plus xs-mr-5"></i>
+                  Add Currency
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="box-body table-responsive no-padding table-smart">
+            <ng2-smart-table [settings]="settings" [source]="source" (custom)="onCustom($event)"></ng2-smart-table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" bsModal #modal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" [config]="{ backdrop: 'static' }"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closePopup()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Manage Currency</h4>
+      </div>
+      <form [formGroup]="formCurrency" (ngSubmit)="onsubmit()" novalidate>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group" [ngClass]="{'has-error':IsCurrencySubmitted && !(formCurrency.controls.CurrencyName.valid), 'has-success': IsCurrencySubmitted && (formCurrency.controls.CurrencyName.valid)}">
+                <label for="Title">Country Name:</label>
+                <input type="text" formControlName="CurrencyName" [(ngModel)]="CurrencyName" class="form-control" placeholder="Enter Country" />
+                <span class="help-block" *ngIf="IsCurrencySubmitted && !(formCurrency.controls.CurrencyName.valid)"> Currency is required. </span>
+              </div>             
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

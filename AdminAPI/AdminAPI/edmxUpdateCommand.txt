@@ -1,0 +1,10 @@
+﻿Scaffold-DbContext "Server=104.168.125.171,1433;Database=Hasbhbyte;user id=hashbyteuser;password=hash!@#789" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models  -F
+
+
+Scaffold-DbContext "Data Source=DESKTOP-OK7SFIP;Initial Catalog=AdminDemo;Integrated Security=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models  -F
+
+
+
+
+
+
